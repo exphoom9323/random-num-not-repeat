@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let NumRandom_Array = [];
+        // while(NumRandom_Array.length < 100){
+        //     while(true){
+        //         let NumRandom_New = Math.floor(Math.random() * 100);
+        //         if(NumRandom_Array.includes(NumRandom_New) == true){
+        //         } else {
+        //             NumRandom_Array.push(NumRandom_New);
+        //             break;
+        //         }
+        //     }
+        
+        // }
+        // console.log(NumRandom_Array);
+        // let ArrayNum = Math.floor(Math.random());
+        // console.log(`ตำแหน่ง Array: ${ArrayNum}`);
+        // console.log(`ค่าที่ได้: ${NumRandom_Array[ArrayNum]}`);
+
+        let NumRandom_Array = [];
+            while(true){
+                let NumRandom_New = Math.floor(Math.random()*9999);
+                if(NumRandom_Array.includes(NumRandom_New) == true){
+
+                } else if (NumRandom_Array.length == 100){
+                    break;
+                }else {
+                    NumRandom_Array.push(NumRandom_New);
+                }
+            }
+        
+        
+        console.log(NumRandom_Array);
+        var ArrayNum = Math.floor(Math.random()*9999);
+        while (true){
+            if(NumRandom_Array.includes(ArrayNum) == false ) {
+                console.log(ArrayNum);
+                break;
+            }
+           var ArrayNum = Math.floor(Math.random()*9999);
+        }
+
+            
+      
+    </script>
+</body>
+</html>
